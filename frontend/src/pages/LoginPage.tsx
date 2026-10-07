@@ -98,7 +98,7 @@ export function LoginPage() {
               <Input
                 id="email"
                 type="email"
-                autoComplete="username"
+                autoComplete="off"
                 placeholder="name@novaworks.example"
                 value={email}
                 invalid={Boolean(error)}
@@ -110,7 +110,7 @@ export function LoginPage() {
                 <Input
                   id="password"
                   type={showPassword ? 'text' : 'password'}
-                  autoComplete="current-password"
+                  autoComplete="off"
                   value={password}
                   invalid={Boolean(error)}
                   onChange={(event) => setPassword(event.target.value)}

@@ -6,3 +6,5 @@ __pycache__/
 backend/tests/last_failed_run_*.json
 frontend/node_modules/
 frontend/dist/
+backend/.venv/
+.venv/

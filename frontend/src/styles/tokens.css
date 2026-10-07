@@ -1,0 +1,77 @@
+/*
+ * NovaWorks PM design tokens.
+ * Whiteboard base, black ink, marker blue for actions, sticky-note colors for people and projects.
+ * One type family (Archivo); its width axis carries the hierarchy.
+ */
+:root {
+  color-scheme: light;
+
+  --board: #eef1f6;
+  --board-line: #dfe4ec;
+  --paper: #ffffff;
+  --ink: #000000;
+  --ink-2: #262a33;
+  --muted: #565d6b;
+  --hover: #f5f7fa;
+
+  --blue: #2e4cf0;
+  --blue-deep: #1f36c4;
+  --yellow: #ffe047;
+
+  --sky: #92d2ff;
+  --sky-soft: #e3f3ff;
+  --pink: #ff9cc8;
+  --pink-soft: #ffe7f2;
+  --green: #a9e27c;
+  --green-soft: #ebf8e0;
+  --orange: #ffb65c;
+  --orange-soft: #ffeedb;
+  --violet: #c3b0ff;
+  --violet-soft: #efe9ff;
+  --yellow-soft: #fff6c8;
+
+  --red: #e5342b;
+  --red-soft: #ffe2df;
+  --red-ink: #b0170f;
+  --green-ink: #12703f;
+  --amber-ink: #8a5300;
+
+  --font: 'Archivo Variable', 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --wide: 125%;
+  --semi-wide: 112%;
+  --narrow: 82%;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.25rem;
+  --fs-lg: 1.5625rem;
+  --fs-xl: 1.953rem;
+
+  --bw: 2px;
+  --border: var(--bw) solid var(--ink);
+  --border-heavy: 3px solid var(--ink);
+  --r-lg: 10px;
+  --r-md: 6px;
+  --r-sm: 4px;
+  --r-inner: calc(var(--r-lg) - var(--bw));
+
+  --shadow-sm: 2px 2px 0 var(--ink);
+  --shadow: 3px 3px 0 var(--ink);
+  --shadow-md: 5px 5px 0 var(--ink);
+  --shadow-lg: 7px 7px 0 var(--ink);
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --t-fast: 110ms;
+  --t-med: 200ms;
+
+  --content: 1240px;
+  --gutter: clamp(16px, 4vw, 40px);
+}
+
+.accent-sky { --accent: var(--sky); --accent-soft: var(--sky-soft); }
+.accent-pink { --accent: var(--pink); --accent-soft: var(--pink-soft); }
+.accent-green { --accent: var(--green); --accent-soft: var(--green-soft); }
+.accent-orange { --accent: var(--orange); --accent-soft: var(--orange-soft); }
+.accent-violet { --accent: var(--violet); --accent-soft: var(--violet-soft); }
+.accent-yellow { --accent: var(--yellow); --accent-soft: var(--yellow-soft); }

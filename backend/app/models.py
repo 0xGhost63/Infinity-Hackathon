@@ -5,7 +5,7 @@ from datetime import date, datetime
 from uuid import uuid4
 
 from sqlalchemy import (
-    JSON,
+    ARRAY,
     CheckConstraint,
     Date,
     DateTime,
@@ -41,7 +41,7 @@ class User(Base):
     password_hash: Mapped[str] = mapped_column(String(255), nullable=False)
     role: Mapped[Role] = mapped_column(Enum(Role, name="user_role"), nullable=False)
     specialization: Mapped[str] = mapped_column(String(120), nullable=False, default="")
-    skills: Mapped[list[str]] = mapped_column(JSON, nullable=False, default=list)
+    skills: Mapped[list[str]] = mapped_column(ARRAY(String), nullable=False, default=list)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
 

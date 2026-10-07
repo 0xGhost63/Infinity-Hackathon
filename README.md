@@ -56,14 +56,7 @@ API docs are available at `http://localhost:8000/api/docs` while the backend run
 
 To run the whole app from one process (what production does): `cd frontend && npm run build`, then start the backend; it serves the built frontend on http://localhost:8000.
 
-## Database setup and seed
 
-1. Create a free PostgreSQL service at https://aiven.io/free-postgresql-database and copy the Service URI.
-2. Put it in `.env` as `DATABASE_URL`. The `postgres://` scheme and `?sslmode=require` can stay exactly as Aiven gives them.
-3. Run `python -m app.seed` from `backend/`. Tables are created automatically. Running it again updates the ten rows and creates nothing new; the script prints `created N, updated M, total 10`.
-4. `python -m app.reset` deletes all projects and tasks and keeps the users. Use it before recording the demo or after test runs.
-
-If `DATABASE_URL` is empty in development, the backend uses a local SQLite file at `backend/dev.db`.
 
 ## Environment variables
 

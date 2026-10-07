@@ -1,0 +1,116 @@
+{
+  "projects": [
+    {
+      "name": "UrbanCart Website",
+      "clientName": "UrbanCart Clothing",
+      "managerId": "PM01",
+      "deadline": "2026-10-20",
+      "tasks": [
+        {
+          "title": "Product catalog UI",
+          "assigneeId": "DEV01",
+          "deadline": "2026-10-12",
+          "estimatedHours": 12,
+          "description": "Product listing, product detail screen and responsive layout."
+        },
+        {
+          "title": "Demo cart UI",
+          "assigneeId": "DEV01",
+          "deadline": "2026-10-15",
+          "estimatedHours": 8,
+          "description": "Add and remove items, change quantities and show a visible total in the demo cart."
+        },
+        {
+          "title": "Product and cart APIs",
+          "assigneeId": "DEV02",
+          "deadline": "2026-10-14",
+          "estimatedHours": 14,
+          "description": "Product data responses and demo cart endpoints, without payment processing."
+        },
+        {
+          "title": "Website integration and testing",
+          "assigneeId": "DEV01",
+          "deadline": "2026-10-19",
+          "estimatedHours": 6,
+          "description": "Connect the screens to the API and verify the demo flow end to end."
+        }
+      ],
+      "description": "Responsive website where customers browse products, view product details and add items to a demo cart. Real payments and inventory integration are excluded from this phase."
+    },
+    {
+      "name": "QuickServe Mobile App",
+      "clientName": "QuickServe Services",
+      "managerId": "PM02",
+      "deadline": "2026-10-24",
+      "tasks": [
+        {
+          "title": "Login and profile screens",
+          "assigneeId": "DEV03",
+          "deadline": "2026-10-12",
+          "estimatedHours": 8,
+          "description": "Customer login interface and a basic profile screen."
+        },
+        {
+          "title": "Service booking screens",
+          "assigneeId": "DEV03",
+          "deadline": "2026-10-17",
+          "estimatedHours": 12,
+          "description": "Select a service, enter request details and see a confirmation screen."
+        },
+        {
+          "title": "Booking and account APIs",
+          "assigneeId": "DEV02",
+          "deadline": "2026-10-16",
+          "estimatedHours": 16,
+          "description": "Basic customer account handling, service requests and request status endpoints."
+        },
+        {
+          "title": "Mobile integration and testing",
+          "assigneeId": "DEV04",
+          "deadline": "2026-10-22",
+          "estimatedHours": 10,
+          "description": "Connect the mobile UI to the API, display request status and test the whole customer flow."
+        }
+      ],
+      "description": "Flutter customer app for signing in, requesting a service and viewing request status. Maps, driver tracking and payments are excluded."
+    },
+    {
+      "name": "HelpDeskPro AI Assistant",
+      "clientName": "HelpDeskPro Solutions",
+      "managerId": "PM03",
+      "deadline": "2026-10-22",
+      "tasks": [
+        {
+          "title": "FAQ document processing",
+          "assigneeId": "DEV06",
+          "deadline": "2026-10-13",
+          "estimatedHours": 10,
+          "description": "Prepare the supplied FAQ so the assistant can retrieve relevant content."
+        },
+        {
+          "title": "Assistant answer generation",
+          "assigneeId": "DEV05",
+          "deadline": "2026-10-17",
+          "estimatedHours": 14,
+          "description": "Use the prepared FAQ content, connect the model and handle the response structure, declining unsupported questions."
+        },
+        {
+          "title": "Human escalation flow",
+          "assigneeId": "DEV05",
+          "deadline": "2026-10-18",
+          "estimatedHours": 6,
+          "description": "Save unresolved questions as escalation records for human review."
+        },
+        {
+          "title": "Assistant evaluation and testing",
+          "assigneeId": "DEV06",
+          "deadline": "2026-10-21",
+          "estimatedHours": 8,
+          "description": "Test FAQ answers, unsupported questions and the escalation path."
+        }
+      ],
+      "description": "Support assistant that answers questions from the supplied FAQ document and records unresolved questions for a human team. No external message sending or ticketing integration."
+    }
+  ],
+  "issues": []
+}
